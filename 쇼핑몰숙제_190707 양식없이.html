@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+  <!-- JS -->   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- test.css -->
+    <link rel = "stylesheet" type = "text/css" href = "test.css">
+
+
+
+  <title>ver2_쇼핑몰_ver2</title>
+
+
+</head>
+
+<style>
+  
+
+
+  .div.jumbotron {
+        width: auto;
+        margin: auto;
+
+      }
+
+  .div card-columns{
+    width: 900px;
+    /*
+    margin: 10px auto 0 auto;*/
+    margin: 10px auto 0 auto;
+
+  }
+
+
+  .radio-inline{
+    text-align: right;
+  }
+  
+  input{
+
+    background-color: white;
+    width: 50%;
+    text-align: center;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: auto;
+
+  }
+  
+  img {
+    border-radius: 10%;
+  }
+
+  
+  form-group{
+    display: inline-block;
+    float: left;
+  }
+
+  
+  span.c {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: auto;
+    border: 1px solid blue;    
+    background-color: yellow;
+    text-align: center
+
+  }
+
+
+/* button fixed 
+ button {
+
+    position: fixed;
+
+  } 
+*/
+
+
+  
+
+</style>
+
+<body>
+
+  <div class="jumbotron">
+    <h1 class="display-3"> No-Cut Slacks
+    </h1>
+    
+    <p class= "lead"> Ultimate Summer Daily Pants
+    </p>
+    
+    <hr class="my-2">
+    <br>
+    
+    <img  src="쇼핑몰.gif" alt="" width="300" height="300" border="10px">
+
+    <p> 
+      <ul> 
+        <li> 1 waist size for two length </li>
+        <li> extreme stretchable</li>
+        <li> slim baggy fit</li>
+      </ul> 
+    </p>
+
+    <!-- emjoi -->
+    <a href="https://www.youtube.com/watch?v=Vq9uLdl6BMY" target="_blank"> <p style="font-size:50px">&#x1F4F9;</p> </a>
+  </div>
+
+  <!-- card columns / column-->
+  <div class="card-columns">
+    <!-- order-style1 
+    <h2 style="font-size: 40px;">Order</h2>-->
+
+    <h2 class="display-4"> Order
+    </h2>
+
+  </div>
+
+  <div class="card-columns">
+    <p style="font-size: 15px; color:black"> <strong> No-Cut Slacks </strong><br>
+    <span style="color:gray" ;font-weight: bold;font-size:15px;> 가격 89,000원 / pcs</span>
+    </p> 
+  </div>
+
+  <div>
+      <label class="radio-inline">
+        <input type="radio" name="size" id="sizegroup" value="option2"> S
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="size" id="sizegroup" value="option2"> M
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="size" id="sizegroup" value="option2"> L
+      </label> 
+    </p>
+  </div>
+
+
+  <!-- Purchase Info 
+  <div class="col-md-5 mb-3">
+    <font size="5" color="black"> 
+      Name  <input type="text"> </br>
+      Adress  <input type="text"> </br>
+    
+    -->
+
+<!-- label - display inline block. width input/ /table / float right -->
+
+  <p>
+    Name<input type="text"> <br>
+    Address <input type="text"> <br>
+
+      
+    <label for="state">State</label>
+    <!-- <select class="custom-select d-block w-50" id="state" required=""> -->
+      <select class="select" id="state" required="">
+
+        <option value="">Choose...</option>
+        <option>Gangnam</option>
+        <option>California</option>
+        <option>Paris</option> </select></p>
+
+  </div>
+
+
+  <div class="form-group">
+    <label for="inputEmail" class="col-sm-4 control-label">Email Receipt</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
+  </div>
+
+<!-- passoword form-group
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      </div>
+  </div>
+-->
+
+<!-- check box 
+    <p>
+      <h1>color</h1>
+      검은색: <input type="checkbox" name="color1" value="black">
+      하얀색: <input type="checkbox" name="color2" value="white" checked="">
+      노란: <input type="checkbox" name="color3" value="yellow" >
+      <input type="submit">
+    </p>
+-->
+
+
+
+  <a href="create.py">create</a>
+  <form action="process_creat.py" method="post">
+    <p><input type="text" name="title" placeholder="title></p>
+    <p><textarea rows="4" name="description" placeholder="description"> </textarea> </p>
+    <p><input type="submit"></p>
+  </form>
+
+  <button class="btn btn-primary btn-lg btn-block" type="submit">
+            Purchase
+  </button>
+
+</body>
+</html>
